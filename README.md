@@ -6,11 +6,11 @@
 + list of settings: `git config --list`
 + help: `git help`
 + For Navigation
-  - Current directory: `pwd`
-  - Move to directory(one step down): `cd ..`
-  - list of files in directory: `ls`
-  - hidden files: `ls -la`
-  - Move to directory(one step up): `cd name of directory` like `cd home`
+  - Current directory: Linux : `pwd` | Windows : `cd`
+  - Move to directory(one step down): Linux : `cd ..` | Windows : `cd ..`
+  - list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list
+  - list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list
+  - Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
 + Initialising Repository: `git init`
 + adding all changes:`git add .`
 + adding specific changes:`git add filename`
