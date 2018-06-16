@@ -1,0 +1,1 @@
+configure username :   `git config --global user.name "username"` 
