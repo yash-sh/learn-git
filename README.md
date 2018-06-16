@@ -6,11 +6,11 @@
 + list of settings: `git config --list`
 + help: `git help`
 + For Navigation
-- Current directory: `pwd`
-- Move to directory(one step down): `cd ..`
-- list of files in directory: `ls`
-- hidden files: `ls -la`
-- Move to directory(one step up): `cd name of directory` like `cd home`
+  - Current directory: `pwd`
+  - Move to directory(one step down): `cd ..`
+  - list of files in directory: `ls`
+  - hidden files: `ls -la`
+  - Move to directory(one step up): `cd name of directory` like `cd home`
 + Initialising Repository: `git init`
 + adding all changes:`git add .`
 + adding specific changes:`git add filename`
@@ -30,4 +30,4 @@
 + push: `git push -u remotename branch`
 + fetch or pull: `git fetch remotename` then rebase by `git rebase`
 OR
-+pull: `git merge remotename/branch`
++ pull: `git merge remotename/branch`
