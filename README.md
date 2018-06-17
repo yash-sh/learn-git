@@ -43,12 +43,31 @@ OR
 + pull: `git merge remotename/branch`
 
 ## Few commands for navigation
-> + Current directory: Linux : `pwd` | Windows : `cd`\
-> + Move to directory(one step down): Linux : `cd ..` | Windows : `cd ..`\
-> + list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list\
-> + list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list\
-> + Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
++ Current directory: Linux : `pwd` | Windows : `cd`
++ Move to directory(one step down): Linux : `cd ..` | Windows : `cd ..`
++ list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list
++ list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list
++ Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
 
 ## Calling Git Bash in Command Prompt (for Windows)
-> + If you didn't run the command (`setx GB "%PROGRAMFILES%\Git\bin\sh.exe"`) given above after installation of Git then run it to save Git Bash path as environment variable.\
-> + After adding GB as environment variable for Git Bash path you can enter into Git Bash in same Command Prompt window using command `call "%GB%" --login` and can return to Command Prompt by using `exit`.
++ If you didn't run the command (`setx GB "%PROGRAMFILES%\Git\bin\sh.exe"`) given above after installation of Git then run it to save Git Bash path as environment variable.
++ After adding GB as environment variable for Git Bash path close the that Command Prompt and open new Command Prompt to save changes.
++ Now you can enter into Git Bash in same Command Prompt window using command `call "%GB%" --login` and can return to Command Prompt by using `exit`.
+
+## Github from git
++ Create new repository on Github with no README.md, .gitignore and license. You can add them later.
++ You will get HTTPS and SSH link there and instructions to use them.
++ Now move to your project directory by `cd project_directory_path`.
++ For existing project
+  - Create .gitignore file bye `echo "excluded_folder" >> .gitignore`
+  - Add all files by `git add .`
+  - Commit your changes by `git commit -m "Create .gitignore file and add all files"`
+  - Add remote link by `git remote add origin HTTPS_or_SSH_link`
+  - Push all files to remote by `git push -u origin master`
++ For new project
+  - Initialise git by `git init`
+  - Create README.md file by `echo "# Repository Name" >> README.md`
+  - Add README.md file by `git add README.md` or add all files by `git add .`
+  - Commit changes by `git commit -m "Create README.md file and add it"`
+  - Add remote link by `git remote add origin HTTPS_or_SSH_link`
+  - Push all files to remote by `git push -u origin master`
