@@ -48,3 +48,7 @@ OR
 > list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list
 > list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list
 > Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
+
+## Calling Git Bash in Command Prompt (for Windows)
+> If you didn't run the command (`setx GB "%PROGRAMFILES%\Git\bin\sh.exe"`) given above after installation of Git then run it to save Git Bash path as environment variable.
+> After adding GB as environment variable for Git Bash path you can enter into Git Bash in same Command Prompt window using command `call "%GB%" --login` and can return to Command Prompt by using `exit`.
