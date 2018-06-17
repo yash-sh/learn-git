@@ -26,7 +26,9 @@
 + making repository as working copy:`git checkout --filename`
 + unstaging changes: `git reset HEAD filename`
 + changing to older version: `git checkout ID --filename`
-+ making remote: `git remote add remotename link`
++ adding remote link: `git remote add remotename link`
++ seeing remote link: `git remote -v`
++ changing remote link: `git remote set-url remotename newlink`
 + push: `git push -u remotename branch`
 + fetch or pull: `git fetch remotename` then rebase by `git rebase`
 OR
