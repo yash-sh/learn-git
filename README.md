@@ -71,3 +71,21 @@ OR
   - Commit changes by `git commit -m "Create README.md file and add it"`
   - Add remote link by `git remote add origin HTTPS_or_SSH_link`
   - Push all files to remote by `git push -u origin master`
++ Using HTTPS remote link you have to enter Username and Password for each request from git to Github.
++ Using SSH remote link will not ask you for Github credentials for each request from git to Github but a passphrase will be asked instead which could be atleast 4 characters long and hence easy to type in.
+  - To start using SSH key first open Git Bash (`call "%GB%" --login` for Windows only).
+  - Generate SSH key by `ssh-keygen -t rsa -b 4096 -C "your_github_email@example.com"`
+    > Generating public/private rsa key pair.
+  - Enter file to save the key or hit Enter to save in default file.
+    > Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
+  - Enter passphrase (at least 4 characters or leave empty and hit enter for no passphrase)
+    > Enter passphrase (empty for no passphrase): [Type a passphrase]\
+    > Enter same passphrase again: [Type passphrase again]
+  - Ensure ssh-agent is running by `eval $(ssh-agent -s)`
+    > Agent pid 59566
+  - Add your SSH private key to the ssh-agent by `ssh-add ~/.ssh/id_rsa`
+  - Copy SSH key to your clipboard by `clip < ~/.ssh/id_rsa.pub`
+  - Open `Github>Settings>SSH and GPG keys>New SSH key` paste key form clipboard and `Add SSH key`.
+  - Test SSH connection by `ssh -T git@github.com`
+    > Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+  - Add or change passphrase by `ssh-keygen -p`
