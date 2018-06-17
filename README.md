@@ -19,12 +19,6 @@
 + show username:  `git cofig user.name`
 + show email:  `git cofig user.email`
 + list of settings: `git config --list`
-+ For Navigation
-  - Current directory: Linux : `pwd` | Windows : `cd`
-  - Move to directory(one step down): Linux : `cd ..` | Windows : `cd ..`
-  - list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list
-  - list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list
-  - Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
 + Initialising Repository: `git init`
 + adding all changes:`git add .`
 + adding specific changes:`git add filename`
@@ -47,3 +41,10 @@
 + fetch or pull: `git fetch remotename` then rebase by `git rebase`
 OR
 + pull: `git merge remotename/branch`
+
+## Few commands for navigation
+> Current directory: Linux : `pwd` | Windows : `cd`
+> Move to directory(one step down): Linux : `cd ..` | Windows : `cd ..`
+> list of files in directory: Linux : `ls` | Windows : `dir` or `dir /b` for simple list
+> list hidden files: Linux : `ls -la` | Windows : `dir /a:h` or `dir /a:h /b` for simple list
+> Move to directory(one step up): Linux : `cd dir_name` | Windows : `cd dir_name`
